@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фільмова база</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Фільмова база</h1>
+            <p>Знайдіть свій улюблений серіал</p>
+        </header>
+
+        <div class="controls">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Пошук за назвою..."
+                class="search-input"
+            >
+            <select id="sortSelect" class="sort-select">
+                <option value="name">Сортувати за назвою</option>
+                <option value="rating">Сортувати за рейтингом</option>
+            </select>
+        </div>
+
+        <div id="loading" class="loading">Завантаження...</div>
+        <div id="error" class="error hidden"></div>
+        <div id="moviesContainer" class="movies-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
